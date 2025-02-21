@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HeyMelody</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Logo and Name in the top left -->
+  <div class="logo">
+    <img src="images/logo.png" height="50" width="50" alt="logo">
+    <h2>HeyMelody</h2>
+  </div>
+
+  <!-- Theme toggle button in the top right -->
+  <div class="theme-toggle">
+    <button id="theme-btn"><i class="fa-solid fa-sun"></i></button>
+  </div>
+
+<!-- Wallpaper popup -->
+<div class="wallpaper-toggle">
+  <button id="wallpaper-btn" disabled><i class="fa-solid fa-image"></i></button>
+  <div class="wallpaper-popup">
+      <img src="images/wallpaper1.jpg" alt="Wallpaper 1">
+      <img src="images/wallpaper2.jpg" alt="Wallpaper 2">
+      <img src="images/wallpaper3.jpg" alt="Wallpaper 3">
+  </div>
+</div>
+
+
+  <!-- Album cover slider (updated to match songs) -->
+  <div class="album-cover">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- Ram Aayenge 🚩 -->
+          <img src="https://w0.peakpx.com/wallpaper/202/932/HD-wallpaper-shree-ram-sun-background-lord-ram-god.jpg" />
+          <div class="overlay">
+            <a href="https://www.youtube.com/watch?v=aatr_2MstrI&ab_channel=CleanBandit" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- ADHARAM MADHURAM -->
+          <img src="https://www.shyamparivar.com/uploads/gallery/best-shri-krishna-wallpaper-hd.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <!-- Ram Aayenge 🚩 (duplicate, same image as first) -->
+          <img src="https://w0.peakpx.com/wallpaper/202/932/HD-wallpaper-shree-ram-sun-background-lord-ram-god.jpg" />
+          <div class="overlay">
+            <a href="https://www.youtube.com/watch?v=h5oHhGlWKf0&ab_channel=MuzikPlay" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- Keejo Kesari Ke Laal (Hanuman) -->
+          <img src="https://media.licdn.com/dms/image/D4D12AQHSMDOPb9YPhg/article-cover_image-shrink_720_1280/0/1684390609012?e=2147483647&v=beta&t=IBa97pBYsaCt7jk1A4xMjTu3vyj5XR0V4hSpTkLb2Ks" />
+          <div class="overlay">
+            <a href="https://www.youtube.com/watch?v=a5uQMwRMHcs&ab_channel=DaftPunkVEVO" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- Shiv Tandav Stotram (Mahadev) -->
+          <img src="https://i.pinimg.com/736x/3f/61/d3/3f61d391f49a3996c1c323fb809f7a95.jpg" />
+          <div class="overlay">
+            <a href="https://www.youtube.com/watch?v=H5v3kku4y6Q&ab_channel=HarryStylesVEVO" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- Ganpati Bappa Morya (Ganesh) -->
+          <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3275/1393275-i-03928152b533" />
+          <div class="overlay">
+            <a href="https://www.youtube.com/watch?v=9HDEHj2yzew&ab_channel=DuaLipa" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- Shakti Hai Bhakti Hai (Vishnu) -->
+          <img src="https://w0.peakpx.com/wallpaper/394/1015/HD-wallpaper-dhyan-me-lin-vishnu-bhagwan-vishnu-bhagwan-bhakti.jpg" />
+          <div class="overlay">
+            <a href="https://www.youtube.com/watch?v=tCXGJQYZ9JA&ab_channel=TaylorSwiftVEVO" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Music player controls -->
+  <div class="music-player">
+    <h1>Title</h1>
+    <p>Song Name</p>
+    <audio id="song">
+      <source src="song-list\Ram Aayenge.m4a" type="audio/mpeg" />
+    </audio>
+    <input type="range" value="0" id="progress" />
+    <div class="controls">
+      <button class="backward"><i class="fa-solid fa-backward"></i></button>
+      <button class="play-pause-btn"><i class="fa-solid fa-play" id="controlIcon"></i></button>
+      <button class="forward"><i class="fa-solid fa-forward"></i></button>
+    </div>
+  </div>
+
+  <!-- Music lighting bar at the edge of the screen -->
+  <div class="music-lighting"></div>
+
+  <!-- Scripts -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+  <script src="./script.js"></script>
+</body>
+</html>
